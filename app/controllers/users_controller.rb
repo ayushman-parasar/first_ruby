@@ -4,12 +4,18 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    #variables starting with # are called instance variables and are available automatically in the views
     @users = User.all
+
+    #By using rails library called active record it arranges all the users in the database
+    #after the variable is defined the (embedded ruby template) view is called 
   end
+
 
   # GET /users/1
   # GET /users/1.json
   def show
+    #@micropost = User.first.microposts.first
   end
 
   # GET /users/new
